@@ -39,7 +39,22 @@
         </div>
     </div>
     <script>
+        const innerDiv = document.querySelector('.inner');
+        innerDiv.addEventListener('click', clickInner, {once: true});
+        const middleDiv = document.querySelector('.middle');
+        middleDiv.addEventListener('click', clickMiddle, {once: true});
+        const outerDiv = document.querySelector('.outer');
+        outerDiv.addEventListener('click', clickOuter, {once: true});
 
+        function clickInner(){
+            console.log('Click Inner');
+        }
+        function clickMiddle(){
+            console.log('Click Middle');
+        }
+        function clickOuter(){
+            console.log('Click Outer');
+        }
     </script>
 </body>
 </html>
